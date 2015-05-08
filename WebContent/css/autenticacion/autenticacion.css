@@ -1,0 +1,30 @@
+@CHARSET "ISO-8859-1";
+
+/* ini :: Cuerpo */
+table, th, td {
+	border: none;
+}
+
+td {
+	padding: 2px 0px;
+}
+	
+#cuerpo {
+	width: 231px;
+	margin: 50px auto 0 auto;
+	padding: 10px;
+	border: 2px solid #aaaaaa;
+	min-height: 300px;
+	max-height: 500px;
+	border: none;
+}
+
+#pError {
+	color: red;
+}
+
+#pBotones {
+	text-align: center;
+}
+/* fin :: Cuerpo */
+

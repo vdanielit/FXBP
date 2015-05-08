@@ -1,0 +1,479 @@
+@CHARSET "ISO-8859-1";
+
+/* ini :: Etiquetas genéricas */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #303030;
+	min-width: 1000px;
+	padding: 0;
+}
+
+div {
+	margin: 0px 0px 5px 0px;
+	/*border-radius: 4px;*/
+}
+
+h1 {
+	margin: 0px;
+	padding: 0px;
+	color: red;
+	font-size: 16px;
+}
+
+h2 {
+	margin: 0px;
+	border-bottom: 1px solid red;
+	color: red;
+	font-size: 14px;
+}
+
+a {
+	color: red;
+	text-decoration: none;
+}
+
+a:visited {
+	color: red;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.pCentrado {
+	text-align: center;
+}
+
+.pRigth {
+	text-align: right;
+}
+
+.pJustificado {
+	text-align: justify;
+}
+
+table {	
+	border-collapse: collapse;
+}
+
+table, th, td {
+	border: 1px solid #aaaaaa;
+}
+
+th, td {
+	vertical-align: middle;
+	margin: 0px;
+	padding: 0px 4px;
+	font-size: 12px;
+}
+
+th {
+	background-color: #dddddd;
+}
+
+.tdLeft {
+	text-align: left;
+}
+
+.tdCenter {
+	text-align: center;
+}
+
+.tdRight {
+	text-align: right;
+}
+
+.iptOculto {
+	display: none;
+}
+/* fin :: Etiquetas genéricas */
+
+
+/* ini :: Cabecera */
+#cabecera {
+	background-color: white;
+	border: 2px solid #aaaaaa;
+}
+
+#cabecera h1 {
+	background-image: url('../../img/principal/logoCorporativo.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	text-align: center;
+	padding: 20px 0 20px 185px;
+}
+/* fin :: Cabecera */
+
+
+/* ini :: div de sesión */
+#divSesion {
+	background-color: white;
+	border-top: 2px solid #aaaaaa;
+	border-bottom: 2px solid #aaaaaa;
+	padding: 0px;
+	font-size: 14px;
+}
+
+#divSesion p {
+	float: left;
+	margin: 0px 0px 0px 1px;
+	padding: 3px 0px 3px 30px;
+	color: red;
+	background-image: url('../../img/principal/flama.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+#divSesion ul {
+	float: none;
+	list-style-type: none;
+	margin: 0px;
+	padding: 3px;
+	text-align: right;
+}
+
+#divSesion ul li {
+	display: inline;
+	margin: 0px;
+	padding: 0px 10px 0px 5px;
+	border-left: 1px solid #aaaaaa;
+}
+/* ini :: div de sesión */
+
+
+/* ini :: Menu */
+#menu {
+	height: 27px;
+	background-color: #eeeeee;
+	padding: 0px 0px 0px 5px;
+}
+
+.menux {
+	margin: 0px;
+	padding: 5px 0px 5px 5px;
+	background-image: url('../../img/principal/flechaDerecha.gif');
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+.nav {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.nav li {
+	float: left;
+	width: 180px;
+	margin: 0px;
+	position: relative;
+}
+
+.nav li p:hover {
+	color: red;
+}
+
+/*=== submenu ===*/
+
+.nav ul {
+	display: none;
+	position: absolute;
+	margin-left: 0px;
+	list-style: none;
+	padding: 0px;
+}
+
+.nav ul li {
+	width: 180px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+}
+
+.nav ul a {
+	background-color: #eeeeee;
+	display: block;
+	height: 15px;
+	padding: 7px 5px;
+	text-decoration: none;
+	border-top: 2px solid white;
+	color: black;
+}
+
+.nav ul a:visited {
+	color: black;
+}
+
+.nav ul li a:hover {
+	color: red;
+}
+/* fin :: Menu */
+
+
+/* ini :: Cuerpo */
+#cuerpo {
+	padding: 5px;
+	margin: 5px 0px 0px 0px;
+	border-top: 2px solid #aaaaaa;
+	border-bottom: 2px solid #aaaaaa;
+	min-height: 400px;
+}
+/* fin :: Cuerpo */
+
+
+/* ini :: formulario de busqueda */
+#filtros {
+	margin-top: 10px;
+}
+
+.filaForm {
+	margin: 5px 0px;
+	padding: 0px;
+}
+
+.etiqueta, .campo {
+	margin: auto 0px;
+	height: auto;
+}
+
+.etiqueta {
+	float: left;
+	width: 130px;
+	padding-top: 4px;
+}
+
+.campo {
+	float: left;
+	width: auto;
+}
+
+.limpiar {
+	clear:both;
+	margin: 0;
+	padding: 0;
+}
+
+#tForm, #tForm tr, #tForm td {
+	border-style: none;
+}
+
+#tForm {
+	margin: 8px auto;
+	margin-bottom: 20px;
+}
+
+#tForm td {
+	padding: 2px 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.tdEtiqueta {
+	text-align: right;
+	width: 120px;
+}
+
+.tdCampo {
+	width: 300px;
+}
+
+.divBotones {
+	border-top: 1px solid #aaaaaa;
+	padding-top: 0;
+	margin-top: 8px;
+}
+
+.divBotones p {
+	text-align: center;
+}
+/* fin :: formulario de busqueda */
+
+
+/* ini :: tabla buscar contrapartes */
+#tContrapartes, #tContrapartes th, #tContrapartes td {
+	border: 1px solid #aaaaaa;
+}
+
+#tContrapartes th {
+	background-color: #dddddd;
+}
+
+#tContrapartes {
+	width: 90%;
+	margin: 20px auto 0 auto;
+}
+
+#tContrapartes #pk {
+	width: 18%;
+}
+
+#tContrapartes #sn {
+	width: 18%;
+}
+
+#tContrapartes #nit {
+	width: 18%;
+}
+
+#tContrapartes #nm {
+	width: 46%;
+}
+
+.classDivLoading {
+	margin: 50px auto;
+}
+
+.classDivLoading p {
+	text-align: center;
+}
+/* fin :: tabla buscar contrapartes */
+
+
+/* ini :: tabla buscar monedas */
+#tMonedas, #tMonedas th, #tMonedas td {
+	border: 1px solid #aaaaaa;
+}
+
+#tMonedas th {
+	background-color: #dddddd;
+}
+
+#tMonedas {
+	width: 90%;
+	margin: 20px auto 0 auto;
+}
+
+#tMonedas #pk {
+	width: 18%;
+}
+
+#tMonedas #sn {
+	width: 18%;
+}
+
+#tMonedas #nit {
+	width: 18%;
+}
+
+#tMonedas #nm {
+	width: 46%;
+}
+/* fin :: tabla buscar monedas */
+
+
+/* ini :: Pie de página */
+#piePagina {
+	background-color: red;
+	clear: both;
+	margin: 10px 0px 0px 0px;
+	border: 2px solid #aaaaaa;
+}
+
+#piePagina p {
+	text-align: center;
+	color: white;
+}
+/* fin :: Pie de página */
+
+/* Ini Tabla Posiciones :: */
+
+.CSSTableGenerator {
+	margin:0px;padding:0px;
+	width:100%;
+	box-shadow: 10px 10px 5px #888888;
+	border:1px solid #000000;
+	
+	-moz-border-radius-bottomleft:7px;
+	-webkit-border-bottom-left-radius:7px;
+	border-bottom-left-radius:7px;
+	
+	-moz-border-radius-bottomright:7px;
+	-webkit-border-bottom-right-radius:7px;
+	border-bottom-right-radius:7px;
+	
+	-moz-border-radius-topright:7px;
+	-webkit-border-top-right-radius:7px;
+	border-top-right-radius:7px;
+	
+	-moz-border-radius-topleft:7px;
+	-webkit-border-top-left-radius:7px;
+	border-top-left-radius:7px;
+}.CSSTableGenerator table{
+    border-collapse: collapse;
+        border-spacing: 0;
+	width:100%;
+	height:100%;
+	margin:0px;padding:0px;
+}.CSSTableGenerator tr:last-child td:last-child {
+	-moz-border-radius-bottomright:7px;
+	-webkit-border-bottom-right-radius:7px;
+	border-bottom-right-radius:7px;
+}
+.CSSTableGenerator table tr:first-child td:first-child {
+	-moz-border-radius-topleft:7px;
+	-webkit-border-top-left-radius:7px;
+	border-top-left-radius:7px;
+}
+.CSSTableGenerator table tr:first-child td:last-child {
+	-moz-border-radius-topright:7px;
+	-webkit-border-top-right-radius:7px;
+	border-top-right-radius:7px;
+}.CSSTableGenerator tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:7px;
+	-webkit-border-bottom-left-radius:7px;
+	border-bottom-left-radius:7px;
+}.CSSTableGenerator tr:hover td{
+	
+}
+.CSSTableGenerator tr:nth-child(odd){ background-color:#e5e5e5; }
+.CSSTableGenerator tr:nth-child(even)    { background-color:#ffffff; }.CSSTableGenerator td{
+	vertical-align:middle;
+	
+	
+	border:1px solid #000000;
+	border-width:0px 1px 1px 0px;
+	text-align:left;
+	padding:7px;
+	font-size:13px;
+	font-family:Arial;
+	font-weight:normal;
+	color:#000000;
+}.CSSTableGenerator tr:last-child td{
+	border-width:0px 1px 0px 0px;
+}.CSSTableGenerator tr td:last-child{
+	border-width:0px 0px 1px 0px;
+}.CSSTableGenerator tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+.CSSTableGenerator tr:first-child td{
+		background:-o-linear-gradient(bottom, #cccccc 5%, #b2b2b2 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #cccccc), color-stop(1, #b2b2b2) );
+	background:-moz-linear-gradient( center top, #cccccc 5%, #b2b2b2 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#cccccc", endColorstr="#b2b2b2");	background: -o-linear-gradient(top,#cccccc,b2b2b2);
+
+	background-color:#cccccc;
+	border:0px solid #000000;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-size:17px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#000000;
+}
+.CSSTableGenerator tr:first-child:hover td{
+	background:-o-linear-gradient(bottom, #cccccc 5%, #b2b2b2 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #cccccc), color-stop(1, #b2b2b2) );
+	background:-moz-linear-gradient( center top, #cccccc 5%, #b2b2b2 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#cccccc", endColorstr="#b2b2b2");	background: -o-linear-gradient(top,#cccccc,b2b2b2);
+
+	background-color:#cccccc;
+}
+.CSSTableGenerator tr:first-child td:first-child{
+	border-width:0px 0px 1px 0px;
+}
+.CSSTableGenerator tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+}
+
+/*Fin Tabla posiciones */
+
