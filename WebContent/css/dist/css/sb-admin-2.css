@@ -355,7 +355,7 @@ table.dataTable thead .sorting:after {
 
 /* ini :: Cabecera */
 
-#cabecera h1 {
+#loginLogo {
 	background-image: url('../../../img/principal/logoCorporativo.png');
 	background-repeat: no-repeat;
 	background-position: left center;
